@@ -1,13 +1,18 @@
 # Predictive Analysis using Pandas & Logistic Regression
 
 This example demonstrates how to use **Pandas** and **Scikit-learn** to
-build a simple predictive model: predicting whether a student passes an
-exam based on study hours.
+build a simple predictive model: 
+## **Predicting whether a student passes an exam based on study hours.**
 
 ------------------------------------------------------------------------
 
-## Step 1: Import Libraries
+## Step 1: Install and Import Libraries
 
+```bash
+pip install pandas scikit-learn
+```
+
+Create a Python file with .py extention and place the below code init.
 ``` python
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
@@ -72,6 +77,7 @@ print("Prediction (2 hours):", model.predict([[2]]))  # Expected: Fail
     -   **7 hours → likely Pass (`1`)**
     -   **2 hours → likely Fail (`0`)**
 
+Note: double brackets [[7]] - because scikit-learn expects input in the form of a 2D array.
 ------------------------------------------------------------------------
 
 ## Summary
@@ -83,3 +89,6 @@ print("Prediction (2 hours):", model.predict([[2]]))  # Expected: Fail
     results.
 -   We can then **predict outcomes for new students** based on study
     hours.
+
+---
+## To be continued: [Titanic_Predictive_Analysis](./Titanic_Predictive_Analysis.md)

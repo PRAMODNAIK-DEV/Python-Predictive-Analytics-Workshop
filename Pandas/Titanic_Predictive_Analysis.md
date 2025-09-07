@@ -7,10 +7,14 @@ fare, sex, and class.
 
 ------------------------------------------------------------------------
 
-## Step 1: Import Libraries
+## Step 1: Install and Import Libraries
+
+```bash
+pip install seaborn scikit-learn matplotlib pandas numpy
+```
 
 ``` python
-import seaborn as sns
+import seaborn as sns           # Seaborn comes with some built-in sample datasets (like Titanic, Iris, Tips, Penguins, etc.)
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
@@ -55,9 +59,10 @@ y = df['survived']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
--   Split dataset into **80% training** and **20% testing**.
+- `test_size=0.3` → Split dataset into **80% training** and **20% testing**.
 -   Ensures model is trained on one portion and evaluated on unseen
-    data.
+    data. 
+- `random_state=42` → ensures that every time we run the code, we get the same train and test split there won't be a shuffling. This is used to control the randomness of how the data is split. The number 42 is just a number — you could use 0, 1, 99, or any other integer. 
 
 ------------------------------------------------------------------------
 
