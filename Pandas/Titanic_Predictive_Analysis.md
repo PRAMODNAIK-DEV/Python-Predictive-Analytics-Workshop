@@ -106,3 +106,6 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 -   Target variable: **Survived (0 or 1)**.
 -   After preprocessing & training, we can measure prediction accuracy
     on test data.
+
+---
+## To be continued: [Introduction_to_Numpy](../Numpy/Introduction_to_Numpy.md)

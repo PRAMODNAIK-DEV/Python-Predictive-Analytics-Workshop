@@ -40,6 +40,32 @@ print(arr)
 -   **2D Array (Matrix)** → `[[1, 2], [3, 4]]`
 -   **3D Array (Tensor)** → `[[[1,2],[3,4]], [[5,6],[7,8]]]`
 
+
+### Creating array without Numpy
+
+```python
+arr = [
+    [ [1, 2, 3, 4],
+      [5, 6, 7, 8],
+      [9, 10, 11, 12] ],
+
+    [ [13, 14, 15, 16],
+      [17, 18, 19, 20],
+      [21, 22, 23, 24] ]
+]
+
+print(arr[0][1][2])  # Access block 0, row 1, col 2 → 7
+```
+
+### Which one is Preferred Numpy Array or List?
+1. Memory Efficiency:
+- A Python list stores pointers to objects, not raw numbers → so it uses more memory.
+- A NumPy ndarray stores numbers in a contiguous block of memory with a fixed data type → much smaller size.
+
+2. Speed (Vectorization & C implementation)
+- Python loops are slow because they run in the Python interpreter.
+- NumPy is written in C and performs operations on entire arrays at once (vectorization) without looping in Python.
+
 ------------------------------------------------------------------------
 
 ## Most Important NumPy Methods
@@ -135,7 +161,6 @@ print("Standard Deviation:", np.std(scores))
 ``` python
 import numpy as np
 
-# Array basics
 arr = np.array([10, 20, 30, 40])
 print("Mean:", arr.mean())
 print("Standard Deviation:", arr.std())
@@ -155,3 +180,6 @@ print("Dot Product:\n", np.dot(A, B))
 data = np.random.normal(50, 10, 1000)
 print("Sample Mean:", np.mean(data))
 ```
+
+---
+## To be continued: [Numpy_Predictive_Analysis](./Numpy_Predictive_Analysis.md)
