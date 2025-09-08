@@ -1,7 +1,5 @@
 
 # Predictive Analysis with NumPy — Linear Regression from Scratch
-
-**Purpose:** This README shows a simple, self-contained example of predictive analysis using **NumPy only**.  
 We fit a **linear regression** model (least squares) by hand to predict student marks from hours studied.
 
 ---
@@ -110,3 +108,5 @@ print("Saved regression_plot.png (current directory)")
 > **Note:** Matplotlib is used **only** for visualization. The predictive computation uses NumPy exclusively.
 
 ---
+
+## To be continued: [Predictive Analysis with Deep Learning - Neural Network](../Predictive%20Analysis%20with%20Deep%20Learning%20-%20Neural%20Network/MNIST-Digit-Classifier.md)

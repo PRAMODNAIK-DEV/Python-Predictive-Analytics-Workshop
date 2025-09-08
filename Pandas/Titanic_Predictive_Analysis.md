@@ -64,6 +64,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
     data. 
 - `random_state=42` → ensures that every time we run the code, we get the same train and test split there won't be a shuffling. This is used to control the randomness of how the data is split. The number 42 is just a number — you could use 0, 1, 99, or any other integer. 
 
+Note:
+In Machine Learning, 
+- X → features (inputs)
+- y → target/output (labels)
 ------------------------------------------------------------------------
 
 ## Step 5: Train Logistic Regression Model
@@ -81,7 +85,7 @@ model.fit(X_train, y_train)
 ## Step 6: Make Predictions
 
 ``` python
-y_pred = model.predict(X_test)
+y_pred = model.predict(X_test)      # y= f(x)
 ```
 
 -   Predict survival for the test set.
